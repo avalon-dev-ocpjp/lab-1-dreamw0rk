@@ -6,7 +6,7 @@ import ru.avalon.java.ocpjp.labs.common.ObjectWriter;
 public class OneDimensionalArraysWriter implements ObjectWriter<int[]> {
 
     @Override
-    public void write(int[] array) throws IOException {
+    public void write(int[] array) {
         System.out.print("[ ");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]);
@@ -18,7 +18,7 @@ public class OneDimensionalArraysWriter implements ObjectWriter<int[]> {
     }
 
     @Override
-    public void close() throws IOException {
+    public void close() {
     }
 
 }

@@ -6,18 +6,18 @@ import ru.avalon.java.ocpjp.labs.common.ObjectWriter;
 public class TwoDimensionalArraysWriter implements ObjectWriter<int[][]>{
 
     @Override
-    public void write(int[][] array) throws IOException {
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j] + " ");
+    public void write(int[][] array) {
+        for (int[] ints : array) {
+            for (int anInt : ints) {
+                System.out.print(anInt + " ");
             }
             System.out.println();
-            
+
         }
     }
 
     @Override
-    public void close() throws IOException {
+    public void close() {
     }
     
     

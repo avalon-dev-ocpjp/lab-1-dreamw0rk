@@ -14,12 +14,12 @@ public class TwoDimensionalArraysSort implements Sort<int[][]>{
     private int[] createOneDimensionalArray(int[][] twoDimArray){
         int[]array = new int[twoDimArray.length * twoDimArray[0].length];
         int n = 0;
-        for (int i = 0; i < twoDimArray.length; i++) {
-            for (int j = 0; j < twoDimArray[i].length; j++) {
-                array[n++] = twoDimArray[i][j];
-        
+        for (int[] ints : twoDimArray) {
+            for (int anInt : ints) {
+                array[n++] = anInt;
+
             }
-            
+
         }
         return array;
     }

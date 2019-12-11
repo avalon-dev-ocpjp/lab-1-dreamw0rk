@@ -40,7 +40,6 @@ public final class Inheritance implements Exercise {
 
     public Inheritance() {
         comparator = new CitizenComparator();
-        source = RandomCitizenSource.getInstance(RandomCitizenFactory.getInstance());
         writer = new CitizenWriter();
     }
 

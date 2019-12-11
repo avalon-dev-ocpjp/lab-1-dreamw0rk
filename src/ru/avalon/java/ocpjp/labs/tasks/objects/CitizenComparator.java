@@ -21,13 +21,8 @@ public class CitizenComparator implements Comparator<Citizen>{
         if(codeContryCompareResult != 0){
             return codeContryCompareResult;
         }
-        
-        int nameCountryCompareResult = o1.getCountry().getName().compareToIgnoreCase(o2.getCountry().getName());
-        if(nameCountryCompareResult != 0){
-            return nameCountryCompareResult;
-        }
-        
-        return 0;
+
+        return o1.getCountry().getName().compareToIgnoreCase(o2.getCountry().getName());
     }
     
     
