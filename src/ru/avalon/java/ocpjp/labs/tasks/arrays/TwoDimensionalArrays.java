@@ -48,9 +48,9 @@ public final class TwoDimensionalArrays implements Exercise {
     private ObjectWriter<int[][]> writer;
 
     public TwoDimensionalArrays() {
-        factory = new RandomTwoDimensionalArraysFactory();
-        sort = new TwoDimensionalArraysSort();
-        writer = new TwoDimensionalArraysWriter();
+        factory = new TwoFactoryArrays();
+        sort = new SortTwoArrays();
+        writer = new TwoArraysWriter();
     }
 
     /**
@@ -61,5 +61,5 @@ public final class TwoDimensionalArrays implements Exercise {
         int[][] array = factory.create();
         sort.run(array);
         writer.write(array);
-    }
+    }    
 }
